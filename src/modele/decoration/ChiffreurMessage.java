@@ -5,7 +5,7 @@ import modele.Message;
 public class ChiffreurMessage extends Message {
     private Message message;
     private String chiffrement;
-    private int decalage = 13;
+    private int decalage = 5;
 
     public ChiffreurMessage(Message message) {
         this.message = message;

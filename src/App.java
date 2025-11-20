@@ -27,8 +27,8 @@ public class App {
 		Message messageDecrypte = new CrypteurXOR (messageCrypte);
 		System.out.println(messageDecrypte.getTexte());
 		
-		//Message messageChiffre = new ChiffreurMessage (secret1);
-		//System.out.println(messageChiffre.getTexte());
+		Message messageChiffre = new ChiffreurMessage (secret1);
+		System.out.println(messageChiffre.getTexte());
 		
 		
 	}
