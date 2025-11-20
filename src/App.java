@@ -32,6 +32,7 @@ public class App {
 		
 		Message secret2 = new Message("Bonjour Matane");
 		System.out.println(secret2.getTexte());
+		
 		Message messageEncode = new EncodeurDeMessage(secret2);
 		System.out.println(messageEncode.getTexte());
 	}

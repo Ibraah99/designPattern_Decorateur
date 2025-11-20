@@ -18,10 +18,10 @@ public class ChiffreurMessage extends Message {
     }
 
     private void chiffrer() {
-        StringBuilder messageChiffré = new StringBuilder();
+        StringBuilder messageChiffre = new StringBuilder();
         for (char msg : message.getTexte().toCharArray()) {
-            messageChiffré.append((char)(msg + decalage));
+            messageChiffre.append((char)(msg + decalage));
         }
-        this.chiffrement = messageChiffré.toString();
+        this.chiffrement = messageChiffre.toString();
     }
 }

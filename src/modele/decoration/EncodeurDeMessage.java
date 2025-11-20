@@ -24,17 +24,18 @@ public class EncodeurDeMessage extends Message {
     }
     
     private void encoder() {
+    	//Inversion
  		String texte = message.getTexte();
  		
  		String inversion = new StringBuffer(texte).reverse().toString();
- 		
+ 		//Decalage 
  		StringBuilder messageADecale = new StringBuilder();
         for (char msg : inversion.toCharArray()) {
             messageADecale.append((char)(msg + 2));
         }
  		String messageDecale = messageADecale.toString();
  		
- 		
+ 		//CrypteurXOR
  		byte[] octets = messageDecale.getBytes();
 		byte[] nouvelles = new byte[octets.length];
 		
